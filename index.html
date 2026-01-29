@@ -12246,41 +12246,51 @@ body {
         </section>
 
 	   <!-- still cut-->
-        <section class="videos-section bg-light" id="videos">
-            <div class="container px-4 px-lg-5 ">
-                <div class="text-center">
-                    <h4>Still cut</h4><br>
-                </div>
-                <div class="row gx-3 gx-lg-5 justify-content-center">
-                    <div class="v-card">
-                        <img src="https://drive.google.com/thumbnail?id=12M9M-jrZw-_UYHCXH7NVvML0m8MHXncP&sz=w1000
-" class="card-img-center" alt=""/>
-                        <div class="card-body">
-                            <h5 class="card-title">자기 소개 영상</h5>
-                            <p class="card-text">배우 | 김해비시</p>
-                            <a href="https://youtu.be/jrTzoKfxaEg?si=dx-8nzGWi33hlLR2">Play</a>
-                        </div>
-                    </div>
-                    <div class="v-card">
-                        <img src="https://drive.google.com/thumbnail?id=1corgd3hLSPqFmpe9RI2vQGGjvsu7vIYe&sz=w1000" class="card-img-center" alt=""/>
-                        <div class="card-body">
-                            <h5 class="card-title">연기독백 | 협상의 기술_수연</h5>
-                            <p class="card-text">배우 | 김해비시</p>
-                            <a href="https://youtu.be/SyP5P3zFuuE?si=2WAOrakJKXCffC4Z">Play</a>
-                        </div>
-                    </div>
-                    <div class="v-card">
-                         <img src="https://drive.google.com/thumbnail?id=1k9iDIaykY6AZwJBw-SxHUewzSNQngIUu&sz=w1000" class="card-img-center" alt=""/>
-                       <div class="card-body">
-                            <h5 class="card-title">연기독백 | 아무도 없는 숲속에서_유성아</h5>
-                            <p class="card-text">배우 | 김해비시</p>
-                            <a href="https://youtu.be/kS31FooQUfM?si=oV4qP-ltkUHLfQ1M">Play</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        	<section class="videos-section bg-light" id="videos">
+			    <div class="container px-4 px-lg-5">
+			        <div class="text-center">
+			            <h4>Still cut</h4><br>
+			        </div>
+			
+			        <div id="stillCutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+			            
+			            <div class="carousel-inner">
+			                <div class="carousel-item active text-center">
+			                    <img src="https://drive.google.com/thumbnail?id=12M9M-jrZw-_UYHCXH7NVvML0m8MHXncP&sz=w1000" class="d-block mx-auto" style="max-height: 500px; object-fit: contain;" alt="자기 소개 영상 스틸컷">
+			                    <div class="mt-3">
+			                        <h5>자기 소개 영상</h5>
+			                        <p class="text-black-50">배우 | 김해비시</p>
+			                    </div>
+			                </div>
+			
+			                <div class="carousel-item text-center">
+			                    <img src="https://drive.google.com/thumbnail?id=1corgd3hLSPqFmpe9RI2vQGGjvsu7vIYe&sz=w1000" class="d-block mx-auto" style="max-height: 500px; object-fit: contain;" alt="연기독백 협상의 기술">
+			                    <div class="mt-3">
+			                        <h5>연기독백 | 협상의 기술_수연</h5>
+			                        <p class="text-black-50">배우 | 김해비시</p>
+			                    </div>
+			                </div>
+			
+			                <div class="carousel-item text-center">
+			                    <img src="https://drive.google.com/thumbnail?id=1k9iDIaykY6AZwJBw-SxHUewzSNQngIUu&sz=w1000" class="d-block mx-auto" style="max-height: 500px; object-fit: contain;" alt="연기독백 아무도 없는 숲속에서">
+			                    <div class="mt-3">
+			                        <h5>연기독백 | 아무도 없는 숲속에서_유성아</h5>
+			                        <p class="text-black-50">배우 | 김해비시</p>
+			                    </div>
+			                </div>
+			            </div>
+			
+			            <button class="carousel-control-prev" type="button" data-bs-target="#stillCutCarousel" data-bs-slide="prev">
+			                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+			                <span class="visually-hidden">Previous</span>
+			            </button>
+			            <button class="carousel-control-next" type="button" data-bs-target="#stillCutCarousel" data-bs-slide="next">
+			                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+			                <span class="visually-hidden">Next</span>
+			            </button>
+			        </div>
+			    </div>
+		</section>
 
         <!-- Contact-->
         <section class="contact-section bg-black" id="contact">
@@ -12341,6 +12351,7 @@ body {
     </body>
 
     </html>
+
 
 
 
