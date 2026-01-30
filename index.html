@@ -11672,14 +11672,29 @@ body {
   }
 }
 
+/* About 섹션 배경을 하얀색에서 #263640으로 변경 */
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.about-section p {
-  margin-bottom: 5rem;
+    /* 상단은 하얀색(#ffffff)에서 시작하여 하단은 #263640으로 끝나는 그라데이션 */
+    background: linear-gradient(to bottom, #ffffff 0%, #263640 100%);
+    
+    /* 텍스트 가독성을 위해 패딩 조절 (선택 사항) */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
+/* 배경이 어두워지므로 글자색이 안 보일 수 있어 대비 수정 */
+.about-section h2, 
+.about-section p {
+    /* 하단으로 갈수록 어두워지므로 글자는 밝은 색이 좋습니다 */
+    color: #263640; /* 상단 하얀 배경일 때 보일 색 */
+}
+
+/* 만약 배경색 전체가 #263640인 느낌을 원하신다면 아래를 사용하세요 */
+/* .about-section {
+    background-color: #263640;
+} 
+*/
+			
 .projects-section {
   padding: 10rem 0;
 }
@@ -12523,6 +12538,7 @@ body {
     </body>
 
     </html>
+
 
 
 
