@@ -11624,6 +11624,7 @@ body {
   border: 0;
 }
 
+			/*
 .masthead {
   position: relative;
   width: 100%;
@@ -11635,7 +11636,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}*/
+
+			.masthead {
+    /* 배경 이미지가 있다면 제거하거나, 하얀색에서 #263640으로 흐르는 투명도 적용 */
+    background: linear-gradient(to bottom, 
+        #ffffff 0%, 
+        rgba(38, 54, 64, 0.5) 50%, 
+        #263640 100%
+    ) !important;
+    margin-bottom: 0 !important;
+    border: none !important;
 }
+			
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
@@ -11672,14 +11685,12 @@ body {
   }
 }
 
-/* About 섹션 배경을 하얀색에서 #263640으로 변경 */
+/* 2. About 섹션 설정 (상단과 완벽히 밀착) */
 .about-section {
-    /* 상단은 하얀색(#ffffff)에서 시작하여 하단은 #263640으로 끝나는 그라데이션 */
-    background: linear-gradient(to bottom, #ffffff 0%, #263640 100%);
-    
-    /* 텍스트 가독성을 위해 패딩 조절 (선택 사항) */
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    margin-top: 0 !important;
+    padding-top: 5rem !important;
+    /* 상단에서 이어받은 #263640 색상을 유지 */
+    background-color: #263640 !important;
 }
 
 /* 배경이 어두워지므로 글자색이 안 보일 수 있어 대비 수정 */
@@ -12538,6 +12549,7 @@ body {
     </body>
 
     </html>
+
 
 
 
