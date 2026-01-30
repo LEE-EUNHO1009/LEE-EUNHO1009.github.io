@@ -11639,11 +11639,12 @@ body {
 }*/
 
 	/* 1. 상단 섹션: 흰색에서 시작해서 하단부에서 #263640으로 전환 */
+/* 1. 상단 섹션: 간격(padding)은 건드리지 않고 배경 그라데이션만 적용 */
 .masthead {
-    /* 기존 간격 설정을 건드리지 않기 위해 background 속성만 수정 */
+    /* 흰색에서 시작해서 하단 끝부분에서 #263640으로 전환 */
     background: linear-gradient(to bottom, 
         #ffffff 0%, 
-        #ffffff 80%, 
+        #ffffff 85%, 
         #263640 100%
     ) !important;
 }
@@ -11684,21 +11685,20 @@ body {
   }
 }
 
-/* 2. 하단 About 섹션: 배경색을 #263640으로 고정 */
+/* 2. About 섹션: 배경색만 #263640으로 변경 (패딩/마진 코드 삭제) */
 .about-section {
-    /* 기존 템플릿의 padding(간격)을 유지하기 위해 배경색만 지정 */
     background-color: #263640 !important;
 }
 
-/* 3. 텍스트 가독성 (흰색 배경 위에서는 어두운 글자색) */
-.masthead h2, .masthead p {
-    color: #263640 !important;
+/* 3. 텍스트 가독성 (간격과 무관) */
+.masthead p, .masthead h2 {
+    color: #263640 !important; /* 상단 흰색 배경용 */
 }
 
-/* (어두운 배경 위에서는 흰색 글자색) */
 .about-section h2, .about-section p {
-    color: #ffffff !important;
+    color: #ffffff !important; /* 하단 어두운 배경용 */
 }
+			/* 3. 텍스트*/
 			
 .projects-section {
   padding: 10rem 0;
@@ -12543,6 +12543,7 @@ body {
     </body>
 
     </html>
+
 
 
 
