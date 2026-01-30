@@ -48,6 +48,34 @@
         opacity: 0.8;
     }
 		/*스틸 컷 끝*/
+
+			/* 영상 카드 및 이미지 스타일 */
+    .video-clickable {
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .video-clickable img {
+        transition: transform 0.3s;
+    }
+    .video-clickable:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* 하얀색 버튼 스타일 보정 (테두리 추가) */
+    .btn-white-play {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #ddd; /* 밝은 배경에서 구분되도록 연한 테두리 */
+        font-weight: 500;
+        width: 100%;
+        transition: all 0.3s;
+    }
+    .btn-white-play:hover {
+        background-color: #f8f9fa;
+        border-color: #bbb;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 			
 :root {
   --bs-blue: #0d6efd;
@@ -12236,36 +12264,36 @@ body {
 			        </div>
 			        <div class="row gx-3 gx-lg-5 justify-content-center">
 			            
-			            <div class="v-card col-md-4">
-			                <div class="video-clickable" data-bs-toggle="modal" data-bs-target="#vModal1">
-			                    <img src="https://drive.google.com/thumbnail?id=12M9M-jrZw-_UYHCXH7NVvML0m8MHXncP&sz=w1000" class="card-img-top" alt="자기 소개">
+			            <div class="v-card col-md-4 mb-5">
+			                <div class="video-clickable mb-3" data-bs-toggle="modal" data-bs-target="#vModal1">
+			                    <img src="https://drive.google.com/thumbnail?id=12M9M-jrZw-_UYHCXH7NVvML0m8MHXncP&sz=w1000" class="card-img-top shadow-sm" alt="자기 소개">
 			                </div>
 			                <div class="card-body text-center">
-			                    <h5 class="card-title mt-2">자기 소개 영상</h5>
-			                    <p class="card-text">배우 | 김해비시</p>
-			                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-target="#vModal1">Play</button>
+			                    <h5 class="card-title">자기 소개 영상</h5>
+			                    <p class="card-text text-muted">배우 | 김해비시</p>
+			                    <button class="btn btn-white-play" data-bs-toggle="modal" data-bs-target="#vModal1">Play</button>
 			                </div>
 			            </div>
 			
-			            <div class="v-card col-md-4">
-			                <div class="video-clickable" data-bs-toggle="modal" data-bs-target="#vModal2">
-			                    <img src="https://drive.google.com/thumbnail?id=1corgd3hLSPqFmpe9RI2vQGGjvsu7vIYe&sz=w1000" class="card-img-top" alt="협상의 기술">
+			            <div class="v-card col-md-4 mb-5">
+			                <div class="video-clickable mb-3" data-bs-toggle="modal" data-bs-target="#vModal2">
+			                    <img src="https://drive.google.com/thumbnail?id=1corgd3hLSPqFmpe9RI2vQGGjvsu7vIYe&sz=w1000" class="card-img-top shadow-sm" alt="협상의 기술">
 			                </div>
 			                <div class="card-body text-center">
-			                    <h5 class="card-title mt-2">연기독백 | 협상의 기술_수연</h5>
-			                    <p class="card-text">배우 | 김해비시</p>
-			                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-target="#vModal2">Play</button>
+			                    <h5 class="card-title">연기독백 | 협상의 기술_수연</h5>
+			                    <p class="card-text text-muted">배우 | 김해비시</p>
+			                    <button class="btn btn-white-play" data-bs-toggle="modal" data-bs-target="#vModal2">Play</button>
 			                </div>
 			            </div>
 			
-			            <div class="v-card col-md-4">
-			                <div class="video-clickable" data-bs-toggle="modal" data-bs-target="#vModal3">
-			                    <img src="https://drive.google.com/thumbnail?id=1k9iDIaykY6AZwJBw-SxHUewzSNQngIUu&sz=w1000" class="card-img-top" alt="숲속에서">
+			            <div class="v-card col-md-4 mb-5">
+			                <div class="video-clickable mb-3" data-bs-toggle="modal" data-bs-target="#vModal3">
+			                    <img src="https://drive.google.com/thumbnail?id=1k9iDIaykY6AZwJBw-SxHUewzSNQngIUu&sz=w1000" class="card-img-top shadow-sm" alt="숲속에서">
 			                </div>
 			                <div class="card-body text-center">
-			                    <h5 class="card-title mt-2">연기독백 | 아무도 없는 숲속에서_유성아</h5>
-			                    <p class="card-text">배우 | 김해비시</p>
-			                    <button class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-target="#vModal3">Play</button>
+			                    <h5 class="card-title">연기독백 | 아무도 없는 숲속에서_유성아</h5>
+			                    <p class="card-text text-muted">배우 | 김해비시</p>
+			                    <button class="btn btn-white-play" data-bs-toggle="modal" data-bs-target="#vModal3">Play</button>
 			                </div>
 			            </div>
 			
@@ -12274,21 +12302,51 @@ body {
 			
 			    <div class="modal fade" id="vModal1" tabindex="-1" aria-hidden="true">
 			        <div class="modal-dialog modal-lg modal-dialog-centered">
-			            <div class="modal-content bg-dark"><div class="modal-body p-0"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/jrTzoKfxaEg" allowfullscreen></iframe></div></div></div>
+			            <div class="modal-content bg-dark border-0">
+			                <div class="modal-header border-0 pb-0">
+			                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+			                </div>
+			                <div class="modal-body p-0 pb-3">
+			                    <div class="ratio ratio-16x9">
+			                        <iframe src="https://www.youtube.com/embed/jrTzoKfxaEg?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			                    </div>
+			                </div>
+			            </div>
 			        </div>
 			    </div>
+			
 			    <div class="modal fade" id="vModal2" tabindex="-1" aria-hidden="true">
 			        <div class="modal-dialog modal-lg modal-dialog-centered">
-			            <div class="modal-content bg-dark"><div class="modal-body p-0"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/SyP5P3zFuuE" allowfullscreen></iframe></div></div></div>
+			            <div class="modal-content bg-dark border-0">
+			                <div class="modal-header border-0 pb-0">
+			                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+			                </div>
+			                <div class="modal-body p-0 pb-3">
+			                    <div class="ratio ratio-16x9">
+			                        <iframe src="https://www.youtube.com/embed/SyP5P3zFuuE?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			                    </div>
+			                </div>
+			            </div>
 			        </div>
 			    </div>
+			
 			    <div class="modal fade" id="vModal3" tabindex="-1" aria-hidden="true">
 			        <div class="modal-dialog modal-lg modal-dialog-centered">
-			            <div class="modal-content bg-dark"><div class="modal-body p-0"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/kS31FooQUfM" allowfullscreen></iframe></div></div></div>
+			            <div class="modal-content bg-dark border-0">
+			                <div class="modal-header border-0 pb-0">
+			                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+			                </div>
+			                <div class="modal-body p-0 pb-3">
+			                    <div class="ratio ratio-16x9">
+			                        <iframe src="https://www.youtube.com/embed/kS31FooQUfM?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			                    </div>
+			                </div>
+			            </div>
 			        </div>
 			    </div>
 			</section>
-			
+
+		<!-- Still cut-->
 			<section class="still-cut-section bg-light py-5" id="stillcuts">
 			    <div class="container px-4 px-lg-5">
 			        <div class="text-center">
@@ -12465,6 +12523,7 @@ body {
     </body>
 
     </html>
+
 
 
 
